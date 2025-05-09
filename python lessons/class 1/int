@@ -1,0 +1,11 @@
+x = int(input("enter a number :"))
+y = int(input("enter a numbre :"))
+
+print("value of x is" ,x)
+print("type of x is" ,type(x))
+
+print("value of y is" ,y )
+print("type of y is",type (y))
+
+print(x**y)
+

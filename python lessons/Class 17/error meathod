@@ -1,0 +1,20 @@
+x = int(input("Enter a number:"))
+    
+try:
+    result = 10/x
+    print(x)
+except ZeroDivisionError:
+    print("Error:Division by zero is not allowed")
+
+print("Likith Reddy")
+
+
+try:
+   age = int(input("Enter a number:"))
+   if age < 0 or age > 130:
+    raise ValueError("age cannot be negetive or greater than 130")
+   print("age is",age)
+except ValueError as e:
+   print("Invalid age",e)
+#
+   

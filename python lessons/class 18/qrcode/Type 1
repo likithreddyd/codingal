@@ -1,0 +1,15 @@
+
+import qrcode
+
+x = qrcode.QRCode()
+
+data = input("Enter the data you want to insert into the qrcode:")
+
+x.add_data(data)
+x.make()
+
+img = x.make_image()
+
+fileName = input("Enter the fileName:")
+img.save(fileName + ".png")
+#

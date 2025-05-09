@@ -1,0 +1,20 @@
+a =2
+b = 3
+c = 4 
+d = 5
+e = 6
+
+print("value of (a+b) * c/d is " , e)
+
+name = "Likith"
+age = 14
+
+if name == "Likith" or name == "Akash" and age >=14:
+   print("this is true")
+else:
+   print("this is not true")
+
+   print("Enter the number (numerator):")
+   numn = int(input())
+   print("Enter the number (denominator):")
+   numd = int(input())

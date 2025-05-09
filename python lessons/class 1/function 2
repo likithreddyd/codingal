@@ -1,0 +1,68 @@
+def add(a,b):
+    return f"sum {a+b}"
+
+def sub(a,b):
+    return f"sub {a-b}"
+
+def multi(a,b):
+    return f"multi {a*b}"
+
+def division(a,b):
+    return f"division {a/b}"
+
+def power(a,b):
+    return f"power {a**b}"
+
+x = add(12,23)
+y = sub(23,34)
+z = multi(23,34)
+A = division(25,5)
+B = power(12,234)
+
+print(x)
+print(y)
+print(z)
+print(A)
+print(B)
+
+for i in range(1,11):
+    if i == 4:
+        continue
+    print(i)
+
+    print("----------------------------")
+
+for i in range(1,11):
+    if i == 5:
+        break
+    print(i)
+
+
+name = input("Enter your name:")
+
+for i in name:
+    if i == 'a':
+      print("a is present")
+      break
+else:
+    print("a is not present")
+
+name = input("Enter your name:")
+
+#practice
+for i in name:
+    if i == 'l':
+      print("l is present")
+      break
+else:
+    print("l is not present")
+      
+
+
+     
+
+
+
+
+
+

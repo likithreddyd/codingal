@@ -1,0 +1,42 @@
+tastList = []
+def add_task(task):
+  if task not in tastList:
+    tastList.append(task)
+    print("Task added successfully")
+  else:
+    print("Task already in the list")
+  print("------Task List------")
+  print(tastList)
+  print("---------------------")
+
+def remove_task(task):
+  if task in tastList:
+      tastList.remove(task)
+      print("Task removed successfully")
+  else:
+    print("Task not in the list")
+def display_task():
+    print("--------------Task List---------------")
+    print(tastList)
+    print("--------------------------------------")
+ 
+
+while True:
+  print("Task Application")
+  print("1. Add a task to the task list ")
+  print("2. Remove Task from the task list")
+  print("3. Display all Tasks present in task list")
+  choice = int(input("Enter your choice: "))
+  if choice == 1:
+    print("Add a task to the task list")
+    task = input("Enter task: ")
+    add_task(task)
+  elif choice == 2:
+    print("Remove Task from the task list")
+    task = input("Enter task: ")
+    remove_task(task)
+  elif choice == 3:
+    print("Display all Tasks present in task list")
+    display_task()
+
+

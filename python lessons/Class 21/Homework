@@ -1,0 +1,20 @@
+ 
+print("Create a set A with elements: 1, 2, 3, 4, 5")
+setA = {1, 2, 3, 4, 5}
+print(setA)
+
+print("Add the element 6 to the set A")
+setA.add(6)
+print(setA)
+
+print("Remove the element 4 using remove()")
+setA.remove(4)
+print(setA)
+
+print("Try to remove an element that does not exist using discard()")
+setA.discard(7)  
+print(setA)
+
+print("Add multiple elements {8, 9, 10} using update()")
+setA.update({8, 9, 10})
+print(setA)

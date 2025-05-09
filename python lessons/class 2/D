@@ -1,7 +1,7 @@
-x = 10  # int
-y= 23.35# float
-z="likith" # String
-isRaviFromIndia = True
+x = 20  # int
+y= 27.39 # float
+z="ravi" # String
+isLaxhmanFromIndia = True
 print("the value of x is" ,x)
 print("type of data stored in x is" , type (x))
 
@@ -11,6 +11,6 @@ print("type of data stored in y is" , type (y))
 print("the value of z is" ,z)
 print("type of data stored in z is" , type (z))
 
-print("the value of isRaviFromIndia" ,isRaviFromIndia)
-print("type of data stored in isRaviFromIndia" , type (isRaviFromIndia))
+print("the value of isLaxhmanFromIndia" ,isLaxhmanFromIndia)
+print("type of data stored in isLaxhmanFromIndia" , type (isLaxhmanFromIndia))
 

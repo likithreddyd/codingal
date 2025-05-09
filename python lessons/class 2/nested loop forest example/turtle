@@ -1,0 +1,22 @@
+import turtle
+
+y = turtle.Turtle()
+
+
+window = turtle.Screen()
+window.bgcolor("#4b9c8a")
+window.setup(500,500)
+
+y.color("pink")
+
+y.forward(100)
+y.left(120)
+y.forward(100)
+y.left(120)
+y.forward(100)
+y.left(60)
+y.forward(100)
+y.left(120)
+y.forward(100)
+
+turtle.done()

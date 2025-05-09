@@ -1,0 +1,35 @@
+list1 = [1,22,23,25,45,57,68,79,89,88]
+
+even_list = []
+
+for i in list1:
+    if i % 2 == 0:
+        even_list.append(i)
+
+print(even_list) 
+
+print("----------------------")
+list1 =[1,22,23,25,45,57,68,79,89,88]
+
+even_list = [x for x in list1 if  x % 2 == 0]
+
+print(even_list) 
+
+print("----------------------")
+list1 = [1,22,23,25,45,57,68,79,89,88]
+
+odd_list = [x for x in list1 if  x % 2 == 1]
+
+print(odd_list)
+
+def square(x):
+    return x * x
+#a = square(2)
+#print(a)
+
+list1 = [1,2,3,4,5,6,7,8,9]
+
+square_list = map(square, list1)
+print(list(square_list))
+
+

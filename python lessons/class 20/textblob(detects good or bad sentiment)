@@ -1,0 +1,18 @@
+from textblob import TextBlob
+
+message = input("Enter a message:")
+
+x = TextBlob(message)
+
+sentimentvalue = x.sentiment.polarity
+
+print("sentiment of the message :" ,sentimentvalue)
+
+if sentimentvalue > 0:
+    print("positive message")
+elif sentimentvalue < 0:
+    print("Negetive message")
+elif sentimentvalue == 0:
+    print("Neutral message")
+
+

@@ -1,0 +1,16 @@
+x = 20 #int
+y =23.34 #float
+z ="likith"
+likithIsFromIndia = True
+
+print("the value of x is" ,x)
+print("type of data stored in x is" ,type (x))
+
+print("the value of y is" ,y)
+print("type fo data stored in y is" ,type (y))
+
+print("the value of z is" ,z)
+print("type of data stored in z is" ,type (z))
+
+print("the value of likthIsFromIndia is" ,likithIsFromIndia)
+print("type of data store in likithIsFromIndia is" ,type (likithIsFromIndia))

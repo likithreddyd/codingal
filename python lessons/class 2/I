@@ -1,0 +1,133 @@
+age =int(input("Enter your age:"))
+
+if age == 10:
+    print("age is 10")
+elif age == 20:
+    print("age is 20")
+elif age == 30:
+    print("age is 30")
+else:
+    print("age is not 10, 20, 30")
+
+print("Welcome to the quiz game")
+
+print("What is the capital of india")
+print("1.new delhi")
+print("2.Mumbai")
+print("3.Tamil Nadu")
+print("4.Telengana")
+
+choice = input("Enter 1,2,3,4:")
+
+if choice == "1":
+    print("correct answer: new delhi")
+if choice == "2":
+    print("wrong answer: Mumbai")
+if choice == "3":
+    print("wrong answer:Tamil Nadu")
+if choice == "4":
+    print("Wrong answer:Telengana")
+else:
+    print("Invalid answer")
+
+
+
+print("who is the student in this class")
+print("Likith reddy")
+print("Akash")
+print("DVReddy")
+print(" indera gandhi")
+
+
+
+if choice == "2":
+
+   
+    score = - 5
+if choice == "3":
+    print("wrong answer:DVReddy")
+    score = score - 5
+if choice == "4":
+    print("Wrong answer:indera gandhi")
+    score = score - 5
+else:
+    print("Invalid answer")
+
+print("who is below 15 years")
+print("Likith reddy")
+print("Akash")
+print("DVReddy")
+print(" indera gandhi")
+
+try:
+  if choice == "1":
+    print("correct answer: Likith reddy")
+    score = score + 10
+except NameError as e:
+    print("Invalid name")
+if choice == "2":
+    print("wrong answer: Akash")
+    score = score - 5
+if choice == "3":
+    print("wrong answer:DVReddy")
+    score = score - 5
+if choice == "4":
+    print("Wrong answer:indera gandhi")
+    score = score - 5
+else:
+    print("Invalid answer")
+
+print("Who is a kid")
+print("Likith reddy")
+print("Akash")
+print("DVReddy")
+print(" indera gandhi")
+
+try:
+  if choice == "1":
+    print("correct answer: Likith reddy")
+    score = score + 10
+except NameError as e:
+    print("Invalid name")
+
+try:
+   if choice == "2":
+    print("wrong answer: Akash")
+    score = score - 5
+except NameError as e:
+    print("Invalid name")
+if choice == "3":
+    print("wrong answer:DVReddy")
+score = score - 5
+if choice == "4":
+    print("Wrong answer:indera gandhi")
+score = score - 5
+
+print("Your score is: ", score)
+
+print("Who is P.M of India")
+print("Nrandera modi")
+print("Likith reddy")
+print("DVReddy")
+print(" indera gandhi")
+
+choice = input("Enter 1,2,3,4:")
+
+if choice == "1":
+    print("correct answer: Narendra modi")
+
+if choice == "2":
+    print("wrong answer: Likith reddy")
+    score = score - 5
+if choice == "3":
+    print("wrong answer:DVReddy")
+    score = score - 5
+if choice == "4":
+    print("Wrong answer:indera gandhi")
+    score = score - 5
+else:
+    print("Invalid answer")
+
+
+
+
