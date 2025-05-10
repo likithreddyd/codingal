@@ -1,0 +1,12 @@
+def shutdown(command):
+    command = command.lower()
+    if command == "yes":
+        return "Shutting down..."
+    elif command == "no":
+        return "Shutdown aborted."
+    else:
+        return "Invalid input. Please enter 'yes' or 'no'."
+
+user_input = input("Do you want to shut down? (yes/no): ")
+result = shutdown(user_input)
+print(result)
