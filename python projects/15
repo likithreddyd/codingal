@@ -1,4 +1,4 @@
-test_dict = {
+dictionary = {
     'a': 10,
     'b': 20,
     'c': 10,
@@ -9,7 +9,7 @@ test_dict = {
 
 frequency = {}
 
-for value in test_dict.values():
+for value in dictionary.values():
     if value in frequency:
         frequency[value] += 1
     else:
