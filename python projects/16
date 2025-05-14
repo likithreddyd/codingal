@@ -1,0 +1,20 @@
+class Circle:
+    def __init__(self, a):
+        self.radius = a
+        print("A circle is created")
+
+    def area(self):
+        print(self.radius,"Area of the circle")
+
+    def perimeter(self):
+        print(self.radius,"Perimeter of the circle")
+      
+CircleA = Circle(5)
+CircleB = Circle(10)
+
+print(CircleA.radius)
+print(CircleB.radius)
+
+CircleA.area()
+CircleB.perimeter()
+
