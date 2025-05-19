@@ -1,0 +1,30 @@
+class Animal:
+
+     def speak(self):
+          print("Animal is speaking")
+
+class dog(Animal):
+     
+     def walk(self):
+          print("The dog is walking")
+
+class cat(Animal):
+     
+     def talk(self):
+          print("A cat is meawing")
+
+Animala = Animal()
+
+Animala.speak()
+
+dog1 = dog()
+dog1.speak()
+dog1.walk()
+
+Animalb = Animal()
+
+Animalb.speak()
+
+cat1 = cat()
+cat1.speak()
+cat1.talk()

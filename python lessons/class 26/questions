@@ -1,0 +1,20 @@
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        print(self.length * self.width)
+
+    def perimeter(self):
+        print(2 * self.length + self.width)
+
+    def is_square(self):
+        print(self.length == self.width)
+
+Value1 = Rectangle(12 , 23)
+Value2 = Rectangle(21 , 34)
+
+Value1.area()
+Value2.is_square()       
+Value2.perimeter()
