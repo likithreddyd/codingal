@@ -1,0 +1,21 @@
+class Bankaccount:
+    def __init__(self,account_holder,balence):
+        self.account_holder = account_holder
+        self.balence = balence 
+
+    def diposite(self,amount):
+        print(self.balance + amount)
+
+    def withdrawamount(self,amount):
+        print(self.balance - amount)
+        
+
+    def displaybalance(self,amount):
+        print(self.balance)
+
+Amount = Bankaccount(123,345)
+Amount2 = Bankaccount(125,122) 
+
+Amount.diposite()
+Amount2.withdrawamount()
+        

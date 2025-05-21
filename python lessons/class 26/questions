@@ -15,6 +15,4 @@ class Rectangle:
 Value1 = Rectangle(12 , 23)
 Value2 = Rectangle(21 , 34)
 
-Value1.area()
-Value2.is_square()       
-Value2.perimeter()
+
