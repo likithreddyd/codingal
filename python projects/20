@@ -1,0 +1,32 @@
+class BMW:
+    def start_engine(self):
+        print("BMW engine started.")
+
+    def stop_engine(self):
+        print("BMW engine stopped.")
+
+    def drive(self):
+        print("Driving a BMW.")
+
+class Ferrari:
+    def start_engine(self):
+        print("Ferrari engine roars to life!")
+
+    def stop_engine(self):
+        print("Ferrari engine shut down.")
+
+    def drive(self):
+        print("Speeding in a Ferrari.")
+
+def test_drive(car):
+    car.start_engine()
+    car.drive()
+    car.stop_engine()
+    print()
+
+bmw_car = BMW()
+ferrari_car = Ferrari()
+
+test_drive(bmw_car)
+test_drive(ferrari_car)
+
