@@ -1,0 +1,7 @@
+number = input("Enter a number: ")
+
+digits_only = [char for char in number if char.isdigit()]
+
+digit_count = len(digits_only)
+
+print("Total number of digits:", digit_count)
