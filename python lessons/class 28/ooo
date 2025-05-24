@@ -1,0 +1,25 @@
+class Example:
+    def _init_(self, x, y):
+        self.x = x
+        self.y = y
+    def _add_(self,other):
+        aTotal = self.a + other.a
+        bTotal = self.b + other.b
+        return Example(aTotal,bTotal)
+    def _eq_(self, other):
+        compaA = self.a == other.a
+        compaB = self.b == other.b
+        if compaA == True and compaB == True:
+             return True,"both the Objects are have equal values for a and b"
+        else:
+             return False,"both the Objects are not  have equal values for a and b"
+            
+obj1 = Example(4,8)
+obj2 = Example(3,8)
+
+obj3 = obj1 + obj2
+
+print(obj1 == obj2)
+
+print(obj3.x)
+print(obj3.y)

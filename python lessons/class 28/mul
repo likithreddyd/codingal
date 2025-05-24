@@ -1,0 +1,16 @@
+class Example:
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+    def __mul__(self,other):
+        xTotal = self.x * other.x
+        yTotal = self.y * other.y
+        return Example(xTotal,yTotal)
+
+obja = Example(5,13)
+objb = Example(6,9)
+
+objc = obja * objb
+
+print(objc.x)
+print(objc.y)
