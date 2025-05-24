@@ -1,0 +1,9 @@
+def multiply_tuple_elements(numbers):
+    product = 1
+    for num in numbers:
+        product *= num
+    return product
+
+sample_tuple = (2, 3, 4, 5)
+result = multiply_tuple_elements(sample_tuple)
+print(f"The product of the tuple elements is: {result}")
