@@ -1,32 +1,12 @@
-class BMW:
-    def start_engine(self):
-        print("BMW engine started.")
+class StringReverser:
+    def __init__(self, input_string):
+        self.input_string = input_string
 
-    def stop_engine(self):
-        print("BMW engine stopped.")
+    def reverse_words(self):
+        words = self.input_string.split()
+        reversed_words = words[::-1]
+        return ' '.join(reversed_words)
 
-    def drive(self):
-        print("Driving a BMW.")
-
-class Ferrari:
-    def start_engine(self):
-        print("Ferrari engine roars to life!")
-
-    def stop_engine(self):
-        print("Ferrari engine shut down.")
-
-    def drive(self):
-        print("Speeding in a Ferrari.")
-
-def test_drive(car):
-    car.start_engine()
-    car.drive()
-    car.stop_engine()
-    print()
-
-bmw_car = BMW()
-ferrari_car = Ferrari()
-
-test_drive(bmw_car)
-test_drive(ferrari_car)
-
+string = "Hello world from ChatGPT"
+reverser = StringReverser(string)
+print(reverser.reverse_words())  
