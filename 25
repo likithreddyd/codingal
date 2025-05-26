@@ -1,0 +1,5 @@
+character =input("Enter a character:")
+if character  in['a','A','b','B','c','C','d','D','e','E','f','F','g','G','h','H','i','I','j','J','k','K','L','l','M','m','n','N','o','O','P','p','Q','q','r','R','s','S','T','t','u','U','v','V','W','w','x','X','Y','y','z','Z']:
+  print("The character is an alphabet")
+else:
+  print("The character is not an alphabet")
