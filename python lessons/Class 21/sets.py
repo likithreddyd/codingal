@@ -22,3 +22,5 @@ print(set1.symmetric_difference(set2))
 #setB = {1,2.5,"likith",True}
 #setC = { 1, 2, 3, 4, 3, 24}
 
+
+

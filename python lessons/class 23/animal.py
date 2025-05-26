@@ -5,3 +5,4 @@ class Animal:
 cow = Animal()
 Tiger = Animal()
 Lion = Animal()
+fox = Animal()

@@ -3,7 +3,7 @@ class Human:
        self.name = a
        self.age = b
        self.gender = c
-
+    print("A human is created,name is {self.name} ,age is {self.age} ,gender is {self.gender} ")
 
     def eat(self):
         print(f"{self.name} is eating")
@@ -26,7 +26,6 @@ Venkatesh = Human("venkatesh",20,"male")
 Veer =  Human("veer",15,"male") 
 kavita =  Human("Kavita",12,"female")
 lakshmi =  Human("lakshmi",19,'female')
-print("A human is created,name is {self.name} ,age is {self.age} ,gender is {self.gender} ")
 
 likith.eat()
 Akash.run()

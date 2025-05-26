@@ -1,7 +1,7 @@
 x = 20 #int
 y =23.34 #float
-z ="likith"
-likithIsFromIndia = True
+z ="likith"#string
+likithIsFromIndia = True#bollean
 
 print("the value of x is" ,x)
 print("type of data stored in x is" ,type (x))

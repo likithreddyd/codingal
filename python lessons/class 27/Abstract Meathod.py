@@ -5,7 +5,7 @@ class Tesla(ABC):
         print("This car runs on fuel")
     def runsOnBattries(self):
         print("This car runs on Battries")
-    
+    @abstractmethod
     def autoDrive(self):
         pass
 

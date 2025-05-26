@@ -1,4 +1,3 @@
-#
 import math
-x=5 
+x= int(input("Enter a number :"))
 print(math.isnan(x))

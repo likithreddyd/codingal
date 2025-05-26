@@ -1,0 +1,57 @@
+
+task = []
+
+def add_task(taskName):
+    task.append(taskName)
+    print(f"Task '{taskName}' added.")
+    
+def remove_task(taskName):
+        task.remove(taskName)
+        print(f"Task '{taskName}' removed.")
+
+taskName = input("Enter task name to add: ")
+add_task(taskName)
+
+taskName = input("Enter task name to add: ")
+add_task(taskName)
+
+taskName = input("Enter task name to add: ")
+add_task(taskName)
+
+print("---------list after adding----------")
+print(f"task list : {task}")
+
+
+
+taskNameToRemove = input("Enter task name to remove: ")
+remove_task(taskNameToRemove)
+
+print("---------list after removing----------")
+print(f"task list : {task}")
+
+print("------------------------------second time------------------------------------")
+#Practice 2nd time
+
+task = []
+
+def add_task(taskName):
+    task.append(taskName)
+    print(f"Task '{taskName}' added.")
+    
+def remove_task(taskName):
+        task.remove(taskName)
+        print(f"Task '{taskName}' removed.")
+
+
+taskName = input("Enter task name to add: ")
+add_task(taskName)
+
+print("---------list after adding----------")
+print(f"task list : {task}")
+print("---------list after adding---------")
+
+taskNameToRemove = input("Enter task name to remove: ")
+remove_task(taskNameToRemove)
+
+print("---------list after removing----------")
+print(f"task list : {task}")

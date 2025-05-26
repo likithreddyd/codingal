@@ -3,7 +3,7 @@ def shutdown(command):
     if command == "yes":
         return "Shutting down..."
     elif command == "no":
-        return "Shutdown aborted."
+        return "Shutdown has been stoped"
     else:
         return "Invalid input. Please enter 'yes' or 'no'."
 
