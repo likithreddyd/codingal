@@ -1,0 +1,54 @@
+import pygame
+import random
+
+def new_func():
+    pygame.init()
+
+    height = 800
+    width = 1000
+
+
+    screen = pygame.display.set_mode((width,height))
+    circleX =0
+    circleY = 100
+    runningStatte = True
+    while runningStatte:
+        screen.fill((139,21,194)) #RGB
+        pygame.draw.circle(screen,"white",(circleX,circleY),20)
+     
+
+
+
+
+        pygame.draw.circle(screen,"pink",(circleX+random.randint(1,50),circleY+random.randint(0,50)),20)
+        
+        
+        
+        
+        pygame.draw.circle(screen,"purple",(circleX+random.randint(1,50),circleY+random.randint(0,50)),20)
+        
+        
+        
+        
+        pygame.draw.circle(screen,"grey",(circleX+random.randint(1,50),circleY+random.randint(0,50)),20)   
+        
+        
+        
+        pygame.draw.circle(screen,"yellow",(circleX+random.randint(1,50),circleY+random.randint(0,50)),20)
+
+        circleX += 1
+        if circleX > width:
+            circleX = 0
+    
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                print("The button x have been clicked")
+                runningStatte = False
+
+        pygame.display.flip()
+
+
+
+    pygame.quit()
+
+new_func()
