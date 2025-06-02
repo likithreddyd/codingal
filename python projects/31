@@ -1,0 +1,29 @@
+import random
+import pygame
+
+pygame.init()
+
+width = 800
+height = 600
+screen = pygame.display.set_mode((width,height))
+
+pygame.display.set_caption("Game Screen with Rectangle and Text")
+
+background_color = int(input("Enter the three values"))
+rectangle_color = int(input("Enter the three values"))
+text_color = int(input("Enter the three values"))
+
+
+running_state = True
+while running_state:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    screen.fill(background_color)
+
+    pygame.display.flip()
+
+
+pygame.quit()
+
