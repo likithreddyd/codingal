@@ -1,0 +1,28 @@
+from  tkinter import *
+
+win = Tk()
+
+win.title("first GUI")
+
+height = 400
+width = 400
+
+win.geometry(f"{height}x{width}")
+
+def clickME():
+    x = entry.get()
+    text2.config(text = x)
+
+text = Label(win, text="hello world")
+text.pack()
+
+entry = Entry(win, width=50, borderwidth=5)
+entry.pack()
+
+Button = Button(win, text="click over me",command = clickME)
+Button.pack()
+
+text2 = Label(win, text="----")
+text2.pack()
+
+win.mainloop()

@@ -1,0 +1,26 @@
+from tkinter import *
+
+def multiply_numbers():
+        num1 = int(entry1.get())
+        num2 = int(entry2.get())
+        result = num1 * num2
+        result_label.config(text=f"Product: {result}")
+
+win = Tk()
+win.title("Multiply Two Numbers")
+
+Label(win, text="Enter first number:").pack()
+entry1 = Entry(win)
+entry1.pack()
+
+Label(win, text="Enter second number:").pack()
+entry2 =Entry(win)
+entry2.pack()
+
+multiply_button = Button(win, text="Multiply", command=multiply_numbers)
+multiply_button.pack()
+
+result_label = Label(win, text="Product will be shown here")
+result_label.pack()
+
+win.mainloop()
