@@ -1,0 +1,82 @@
+import pygame
+import random
+
+pygame.init()
+pygame.mixer.init()
+
+WIDTH, HEIGHT = 800, 600
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption("Sprite Collision with Background & Sound")
+
+
+RED = (255, 0, 0)
+BLUE = (0, 0, 255)
+
+class Player(pygame.sprite.Sprite):
+    def __init__(self):
+        super().__init__()
+        self.image = pygame.Surface((50, 50))
+        self.image.fill(BLUE)
+        self.rect = self.image.get_rect()
+        self.rect.center = (WIDTH // 2, HEIGHT - 60)
+
+    def update(self):
+        keys = pygame.key.get_pressed()
+        if keys[pygame.K_LEFT]:
+            self.rect.x -= 5
+        if keys[pygame.K_RIGHT]:
+            self.rect.x += 5
+        self.rect.x = max(0, min(self.rect.x, WIDTH - self.rect.width))
+
+
+class Enemy(pygame.sprite.Sprite):
+    def __init__(self):
+        super().__init__()
+        self.image = pygame.Surface((40, 40))
+        self.image.fill(RED)
+        self.rect = self.image.get_rect()
+        self.rect.x = random.randint(0, WIDTH - self.rect.width)
+        self.rect.y = random.randint(0, HEIGHT - 200)
+
+all_sprites = pygame.sprite.Group()
+enemies = pygame.sprite.Group()
+
+player = Player()
+all_sprites.add(player)
+
+for _ in range(7):
+    enemy = Enemy()
+    all_sprites.add(enemy)
+    enemies.add(enemy)
+
+score = 0
+font = pygame.font.SysFont(None, 36)
+
+running = True
+clock = pygame.time.Clock()
+
+while running:
+    clock.tick(60)
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    all_sprites.update()
+
+    hits = pygame.sprite.spritecollide(player, enemies, dokill=True)
+    score += len(hits)
+
+    for _ in hits:
+        new_enemy = Enemy()
+        all_sprites.add(new_enemy)
+        enemies.add(new_enemy)
+
+
+    all_sprites.draw(screen)
+    score_text = font.render(f"Score: {score}", True, (0, 0, 0))
+    screen.blit(score_text, (10, 10))
+
+    pygame.display.flip()
+
+pygame.quit()
