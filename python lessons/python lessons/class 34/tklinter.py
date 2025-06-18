@@ -41,7 +41,12 @@ def powfunction():
     b = int(entry2.get())
     res = a ** b
     result.config(text=f"pow:{res}")
-    
+
+def randomfunction():
+    a = int(entry1.get())
+    b = int(entry2.get())
+    res = a ^ b
+    result.config(text=f"random:{res}")
 
 entry1 = Entry(win, width=20, borderwidth=3)
 entry1.pack(pady=10)
@@ -68,12 +73,10 @@ pow.pack(padx=10)
 percentage = Button(win, text="%",width=10,borderwidth=3, command=percentagefunction)
 percentage.pack(pady=10)
 
-
-
-
+random = Button(win, text="^",width=10,borderwidth=3, command=randomfunction)
+random.pack(padx=10)
 
 result = Label(win, text="Result", width=10, borderwidth=3)
 result.pack(pady=10)
-
 
 win.mainloop()
